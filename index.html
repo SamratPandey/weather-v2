@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/ec603139bc.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+    <title>WeatherReport | SamratPandey</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!--header section-->
+        <div class="container">
+            <h1 class="heading">WEATHER APP</h1>
+        </div>
+        <div class="btn">
+            <p id="yourWeather" class="yourWeather ">Your Weather</p>
+            <p id="searchWeather" class="searchWeather ">Search Weather</p>
+        </div>
+        <!-- frist section-->
+        <div id="fSection" class="fristSection">
+            <div class="data">
+                <p id="newCity">
+                    
+                </p>
+                <img id="nflag">
+                <p id="newDetails"></p>
+                <img id="newImg"></img>
+                <p id="newTemp" class="newTemp"></p>
+            </div>
+            <div class="fristDataSection sectionLayout">
+                <div class="box">
+                    <i class="fa-solid fa-wind"></i>
+                    <p>WINDSPEED</p>
+                    <p class="windData"></p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p>HUMIDITY</p>
+                    <p class="huminityData"></p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-cloud"></i>
+                    <p>CLOUDS</p>
+                    <p class="cloudData"></p>
+                </div>
+            </div>
+        </div>
+        <!--second section-->
+        <div id="sSection" class="secondSection remove" data-sSection>
+            <div class="searchSection">
+                <input class="searchBar" type="text" onfocus="this.value=''" placeholder="Search for city..." id="city" />
+                <button id="search" class="btnSearch" type="submit">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div  id="data" class="data"></div>
+            <div id="sectionSecond">
+                <div class="data">
+                    <p id="nCity">
+                        
+                    </p>
+                    <img id="flag">
+                    <p id="nDetails"></p>
+                    <img id="nImg">
+                    <p id="nTemp"></p>
+                </div>
+                <div class="secondDataSection sectionLayout">
+                    <div class="box">
+                        <i class="fa-solid fa-wind"></i>
+                        <p>WIND SPEED</p>
+                        <p class="windData2"></p>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-droplet"></i>
+                        <p>HUMIDITY</p>
+                        <p class="huminityData2"></p>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-cloud"></i>
+                        <p>CLOUDS</p>
+                        <p class="cloudData2"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div style="display: none;">
+            <p id="let">0</p>
+            <p id="long">0</p>
+        </div>
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>                                                                                                                                                         
